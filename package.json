@@ -8,7 +8,7 @@
   "scripts": {
     "build": "xmcp build",
     "dev": "xmcp dev",
-    "start": "node dist/http.js"
+    "start": "bun run dist/http.js"
   },
   "dependencies": {
     "xmcp": "0.4.0",
