@@ -12,6 +12,13 @@ An MCP (Model Context Protocol) server for managing documents, folders, and file
 - **update-document** - Update document properties
 - **delete-documents** - Move documents to trash
 
+### Document Element Tools
+
+- **create-element** - Add elements to documents (text blocks, headers, color blocks, embeds, etc.)
+- **update-element** - Update existing document elements
+- **delete-element** - Remove elements from documents
+- **publish-document-revision** - Publish document changes to make them visible
+
 ### Folder Management Tools
 
 - **list-folders** - List folder hierarchy
@@ -192,6 +199,18 @@ Create a new folder called "2024 Marketing" as a subfolder of folder ID 1
 
 ```
 Show me the details of document 123
+```
+
+**Add content to a document:**
+
+```
+Add a text block with "Welcome to our brand guidelines" and a color block with name "Primary Blue" RGB(0,102,204) to document 382989
+```
+
+**Create a complete document with content:**
+
+```
+Create a new document called "Brand Colors" in folder 174622, then add a header "Our Color Palette" and three color blocks: Primary Blue (0,102,204), Secondary Green (34,139,34), and Accent Orange (255,140,0)
 ```
 
 **Note:** You don't need to pass the API key in any prompts - it's handled automatically by the middleware!
