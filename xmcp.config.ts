@@ -15,9 +15,10 @@ const config: XmcpConfig = {
     oauth: {
       baseUrl: "https://my-app.com",
       endpoints: {
-        authorizationUrl: "https://auth-provider.com/oauth/authorize",
-        tokenUrl: "https://auth-provider.com/oauth/token",
-        registerUrl: "https://auth-provider.com/oauth/register", // mandatory
+        authorizationUrl: "https://authorization-server.com/authorize",
+        tokenUrl: "https://authorization-server.com/token",
+        registerUrl:
+          "https://www.oauth.com/playground/client-registration.html", // mandatory
       },
       issuerUrl: "https://my-app.com",
       defaultScopes: ["openid", "profile", "email"],
