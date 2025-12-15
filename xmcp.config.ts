@@ -11,6 +11,19 @@ const config: XmcpConfig = {
     prompts: false,
     resources: false,
   },
+  experimental: {
+    oauth: {
+      baseUrl: "https://my-app.com",
+      endpoints: {
+        authorizationUrl: "https://auth-provider.com/oauth/authorize",
+        tokenUrl: "https://auth-provider.com/oauth/token",
+        registerUrl: "https://auth-provider.com/oauth/register", // mandatory
+      },
+      issuerUrl: "https://my-app.com",
+      defaultScopes: ["openid", "profile", "email"],
+      pathPrefix: "/oauth2",
+    },
+  },
 };
 
 export default config;
